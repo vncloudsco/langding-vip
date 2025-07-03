@@ -135,6 +135,36 @@ export default function TinyPanelLanding() {
                 <p className="text-gray-600">{t("features.management.desc")}</p>
               </CardContent>
             </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Lock className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">{t("features.waf.title")}</h3>
+                <p className="text-gray-600">{t("features.waf.desc")}</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Shield className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">{t("features.wplock.title")}</h3>
+                <p className="text-gray-600">{t("features.wplock.desc")}</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-700 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Globe className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">{t("features.aibot.title")}</h3>
+                <p className="text-gray-600">{t("features.aibot.desc")}</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -456,6 +486,27 @@ export default function TinyPanelLanding() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">{t("detailed.devTools")}</h3>
                     <p className="text-gray-600">{t("detailed.devToolsDesc")}</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-2">{t("detailed.waf")}</h3>
+                    <p className="text-gray-600">{t("detailed.wafDesc")}</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-2">{t("detailed.wplock")}</h3>
+                    <p className="text-gray-600">{t("detailed.wplockDesc")}</p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-2">{t("detailed.aibot")}</h3>
+                    <p className="text-gray-600">{t("detailed.aibotDesc")}</p>
                   </div>
                 </div>
               </div>

@@ -42,6 +42,15 @@ const translations = {
     "features.management.title": "Easy Management",
     "features.management.desc":
       "User-friendly menu system with regular updates, comprehensive WordPress tools, and automated backup solutions.",
+    "features.waf.title": "WAF ModSecurity",
+    "features.waf.desc":
+      "Web Application Firewall with ModSecurity integration to protect your websites from common vulnerabilities, SQL injections, and cross-site scripting attacks.",
+    "features.wplock.title": "WordPress Lockdown",
+    "features.wplock.desc":
+      "Enhanced WordPress security system that limits malware propagation and protects core files from unauthorized modifications with real-time monitoring.",
+    "features.aibot.title": "AI Crawler Protection",
+    "features.aibot.desc":
+      "Advanced bot detection and protection system that prevents AI crawlers from scraping your website content and consuming server resources.",
 
     // Why Choose Section
     "why.badge": "Why Choose TinyPanel?",
@@ -179,6 +188,12 @@ const translations = {
     "detailed.sslDesc": "Let's Encrypt integration with CloudFlare DNS API support",
     "detailed.devTools": "Development Tools",
     "detailed.devToolsDesc": "WP-CLI, Composer, Supervisor, Rclone, and malware scanning",
+    "detailed.waf": "WAF ModSecurity",
+    "detailed.wafDesc": "Web Application Firewall with ModSecurity integration to protect your websites from common vulnerabilities, SQL injections, and cross-site scripting attacks.",
+    "detailed.wplock": "WordPress Lockdown",
+    "detailed.wplockDesc": "Enhanced WordPress security system that limits malware propagation and protects core files from unauthorized modifications with real-time monitoring.",
+    "detailed.aibot": "AI Crawler Protection",
+    "detailed.aibotDesc": "Advanced bot detection and protection system that prevents AI crawlers from scraping your website content and consuming server resources.",
   },
   vi: {
     // Header
@@ -208,6 +223,15 @@ const translations = {
     "features.management.title": "Quản lý dễ dàng",
     "features.management.desc":
       "Hệ thống menu thân thiện với người dùng với cập nhật thường xuyên, công cụ WordPress toàn diện và giải pháp sao lưu tự động.",
+    "features.waf.title": "WAF ModSecurity",
+    "features.waf.desc":
+      "Tường lửa ứng dụng web với tích hợp ModSecurity để bảo vệ trang web của bạn khỏi các lỗ hổng phổ biến, SQL injection và tấn công cross-site scripting.",
+    "features.wplock.title": "WordPress Lockdown",
+    "features.wplock.desc":
+      "Hệ thống bảo mật WordPress nâng cao hạn chế sự lây lan của mã độc và bảo vệ các tệp lõi khỏi các sửa đổi trái phép với giám sát thời gian thực.",
+    "features.aibot.title": "Chặn AI Crawler",
+    "features.aibot.desc":
+      "Hệ thống phát hiện và bảo vệ bot nâng cao ngăn chặn các trình thu thập dữ liệu AI thu thập nội dung trang web của bạn và tiêu tốn tài nguyên máy chủ.",
 
     // Why Choose Section
     "why.badge": "Tại sao chọn TinyPanel?",
@@ -345,6 +369,12 @@ const translations = {
     "detailed.sslDesc": "Tích hợp Let's Encrypt với hỗ trợ CloudFlare DNS API",
     "detailed.devTools": "Công cụ phát triển",
     "detailed.devToolsDesc": "WP-CLI, Composer, Supervisor, Rclone và quét phần mềm độc hại",
+    "detailed.waf": "WAF ModSecurity",
+    "detailed.wafDesc": "Tường lửa ứng dụng web với tích hợp ModSecurity để bảo vệ trang web của bạn khỏi các lỗ hổng phổ biến, SQL injection và tấn công cross-site scripting.",
+    "detailed.wplock": "WordPress Lockdown",
+    "detailed.wplockDesc": "Hệ thống bảo mật WordPress nâng cao hạn chế sự lây lan của mã độc và bảo vệ các tệp lõi khỏi các sửa đổi trái phép với giám sát thời gian thực.",
+    "detailed.aibot": "Chặn AI Crawler",
+    "detailed.aibotDesc": "Hệ thống phát hiện và bảo vệ bot nâng cao ngăn chặn các trình thu thập dữ liệu AI thu thập nội dung trang web của bạn và tiêu tốn tài nguyên máy chủ.",
   },
 }
 
