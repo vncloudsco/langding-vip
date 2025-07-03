@@ -27,7 +27,7 @@ const translations = {
     "pricing.subtitle": "Choose the plan that works for your needs",
     "pricing.free.title": "Free",
     "pricing.free.price": "Free",
-    "pricing.free.description": "Get started with essential features at no cost",
+    "pricing.free.description": "All essential features with no limitations",
     "pricing.free.button": "Get Started",
     "pricing.vip.title": "VIP",
     "pricing.vip.price": "$20",
@@ -42,6 +42,8 @@ const translations = {
     "pricing.feature.aiProtection": "AI Crawler Protection",
     "pricing.feature.rebuilds": "5 Free Server Rebuilds",
     "pricing.feature.additionalRebuilds": "Additional rebuilds: $5 each",
+    "pricing.feature.included": "Included",
+    "pricing.feature.notIncluded": "Not Included",
 
     // Hero Section
     "hero.badge": "🚀 Fast, Secure & Optimized LEMP Stack",
@@ -123,27 +125,6 @@ const translations = {
     "tech.security.item1": "Automatic Let's Encrypt SSL certificates with auto-renewal",
     "tech.security.item2": "Advanced firewall configuration with CSF integration",
     "tech.security.item3": "Comprehensive malware scanning with ClamAV & ImunifyAV",
-
-    // Pricing Table
-    "pricing.title": "Simple, Transparent Pricing",
-    "pricing.subtitle": "Choose the plan that works for your needs",
-    "pricing.free.title": "Free",
-    "pricing.free.price": "Free",
-    "pricing.free.description": "Get started with essential features at no cost",
-    "pricing.free.button": "Get Started",
-    "pricing.vip.title": "VIP",
-    "pricing.vip.price": "$20",
-    "pricing.vip.description": "Enhanced security and protection features",
-    "pricing.vip.button": "Upgrade Now",
-    "pricing.perServer": "per server",
-    "pricing.feature.allFeatures": "All Essential Features",
-    "pricing.feature.unlimitedWebsites": "Unlimited Websites",
-    "pricing.feature.noRestrictions": "No Feature Restrictions",
-    "pricing.feature.waf": "WAF ModSecurity",
-    "pricing.feature.wpLock": "WordPress Lockdown",
-    "pricing.feature.aiProtection": "AI Crawler Protection",
-    "pricing.feature.rebuilds": "5 Free Server Rebuilds",
-    "pricing.feature.additionalRebuilds": "Additional rebuilds: $5 each",
 
     "tech.requirements.title": "System Requirements",
     "tech.requirements.item1": "Ubuntu 18.04, 20.04, 22.04, 24.04 LTS support",
@@ -348,27 +329,6 @@ const translations = {
     "tech.security.item2": "Cấu hình tường lửa nâng cao với tích hợp CSF",
     "tech.security.item3": "Quét phần mềm độc hại toàn diện với ClamAV & ImunifyAV",
 
-    // Pricing Table
-    "pricing.title": "Bảng giá đơn giản, minh bạch",
-    "pricing.subtitle": "Chọn gói phù hợp với nhu cầu của bạn",
-    "pricing.free.title": "Miễn phí",
-    "pricing.free.price": "Miễn phí",
-    "pricing.free.description": "Bắt đầu với các tính năng cơ bản không mất phí",
-    "pricing.free.button": "Bắt đầu ngay",
-    "pricing.vip.title": "VIP",
-    "pricing.vip.price": "500.000₫",
-    "pricing.vip.description": "Tính năng bảo mật và bảo vệ nâng cao",
-    "pricing.vip.button": "Nâng cấp ngay",
-    "pricing.perServer": "cho mỗi máy chủ",
-    "pricing.feature.allFeatures": "Tất cả tính năng cần thiết",
-    "pricing.feature.unlimitedWebsites": "Website không giới hạn",
-    "pricing.feature.noRestrictions": "Không giới hạn tính năng",
-    "pricing.feature.waf": "WAF ModSecurity",
-    "pricing.feature.wpLock": "WordPress Lockdown",
-    "pricing.feature.aiProtection": "Chặn AI Crawler",
-    "pricing.feature.rebuilds": "5 lần Rebuild máy chủ miễn phí",
-    "pricing.feature.additionalRebuilds": "Rebuild thêm: 100.000₫/lần",
-
     "tech.requirements.title": "Yêu cầu hệ thống",
     "tech.requirements.item1": "Hỗ trợ Ubuntu 18.04, 20.04, 22.04, 24.04 LTS",
     "tech.requirements.item2": "Tối thiểu 512MB RAM với cài đặt máy chủ sạch",
@@ -495,4 +455,8 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
 export function useLanguage() {
   const context = useContext(LanguageContext)
-  if
+  if (!context) {
+    throw new Error("useLanguage must be used within a LanguageProvider")
+  }
+  return context
+}
