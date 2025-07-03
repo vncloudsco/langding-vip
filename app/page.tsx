@@ -51,6 +51,9 @@ export default function TinyPanelLanding() {
               <Link href="#technologies" className="text-gray-600 hover:text-blue-600 transition-colors">
                 {t("header.technologies")}
               </Link>
+              <Link href="#pricing" className="text-gray-600 hover:text-blue-600 transition-colors">
+                {t("header.pricing")}
+              </Link>
               <Link href="#installation" className="text-gray-600 hover:text-blue-600 transition-colors">
                 {t("header.installation")}
               </Link>
@@ -621,6 +624,121 @@ export default function TinyPanelLanding() {
                     {t("wp.seo.item5")}
                   </li>
                 </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-16 px-4 bg-white">
+        <div className="container mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{t("pricing.title")}</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">{t("pricing.subtitle")}</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Free Plan Card */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow overflow-hidden">
+              <div className="bg-gradient-to-r from-blue-100 to-blue-50 px-6 py-4">
+                <h3 className="text-2xl font-bold text-gray-900">{t("pricing.free.title")}</h3>
+                <div className="mt-2">
+                  <span className="text-3xl font-bold text-blue-600">{t("pricing.free.price")}</span>
+                </div>
+                <p className="mt-2 text-sm text-gray-600">{t("pricing.free.description")}</p>
+              </div>
+              <CardContent className="p-6">
+                <ul className="space-y-3">
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    {t("pricing.feature.allFeatures")}
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    {t("pricing.feature.unlimitedWebsites")}
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    {t("pricing.feature.noRestrictions")}
+                  </li>
+                  <li className="flex items-start text-gray-500 opacity-60">
+                    <Lock className="w-5 h-5 mr-3 mt-0.5" />
+                    {t("pricing.feature.waf")}
+                  </li>
+                  <li className="flex items-start text-gray-500 opacity-60">
+                    <Lock className="w-5 h-5 mr-3 mt-0.5" />
+                    {t("pricing.feature.wpLock")}
+                  </li>
+                  <li className="flex items-start text-gray-500 opacity-60">
+                    <Lock className="w-5 h-5 mr-3 mt-0.5" />
+                    {t("pricing.feature.aiProtection")}
+                  </li>
+                </ul>
+
+                <div className="mt-8">
+                  <Button
+                    className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+                    size="lg"
+                  >
+                    {t("pricing.free.button")}
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* VIP Plan Card */}
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow overflow-hidden relative">
+              <div className="absolute -right-12 top-6 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-12 py-1 rotate-45 text-sm font-semibold">
+                VIP
+              </div>
+              <div className="bg-gradient-to-r from-purple-100 to-blue-50 px-6 py-4">
+                <h3 className="text-2xl font-bold text-gray-900">{t("pricing.vip.title")}</h3>
+                <div className="mt-2">
+                  <span className="text-3xl font-bold text-purple-600">{t("pricing.vip.price")}</span>
+                  <span className="text-gray-600 ml-1">/ {t("pricing.perServer")}</span>
+                </div>
+                <p className="mt-2 text-sm text-gray-600">{t("pricing.vip.description")}</p>
+              </div>
+              <CardContent className="p-6">
+                <ul className="space-y-3">
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    {t("pricing.feature.allFeatures")}
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    {t("pricing.feature.unlimitedWebsites")}
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    {t("pricing.feature.waf")}
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    {t("pricing.feature.wpLock")}
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    {t("pricing.feature.aiProtection")}
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    {t("pricing.feature.rebuilds")}
+                  </li>
+                  <li className="flex items-center text-sm text-gray-500 mt-2 pl-8">
+                    {t("pricing.feature.additionalRebuilds")}
+                  </li>
+                </ul>
+
+                <div className="mt-8">
+                  <Button
+                    className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+                    size="lg"
+                  >
+                    {t("pricing.vip.button")}
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
