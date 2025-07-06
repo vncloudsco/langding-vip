@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "vn_VI",
     url: "https://tinyactive.github.io/panel",
     title: "TinyPanel - Professional LEMP Stack Installer for Ubuntu VPS",
     description:
