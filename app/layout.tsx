@@ -185,7 +185,7 @@ export default function RootLayout({
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "Technical Support",
-                email: "sanvv@hostvn.com",
+                email: "contact@manhtuong.net",
                 availableLanguage: ["English", "Vietnamese"],
               },
             }),
