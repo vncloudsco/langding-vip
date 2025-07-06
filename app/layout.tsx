@@ -43,14 +43,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://tinyactive.github.io"),
+  metadataBase: new URL("https://tinycp.me/"),
   alternates: {
     canonical: "/panel",
   },
   openGraph: {
     type: "website",
     locale: "vn_VI",
-    url: "https://tinyactive.github.io/panel",
+    url: "https://tinycp.me/",
     title: "TinyPanel - Professional LEMP Stack Installer for Ubuntu VPS",
     description:
       "Cài đặt và tối ưu hóa LEMP trên máy chủ Ubuntu VPS với TinyPanel. Thiết lập LEMP tự động với bảo mật toàn diện, chứng chỉ SSL, công cụ WordPress và tối ưu hóa hiệu suất. Giải pháp quản lý máy chủ nguồn mở miễn phí..",
