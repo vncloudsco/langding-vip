@@ -18,13 +18,7 @@ export function SEOHead({
       {/* Primary Meta Tags */}
       <title>{title}</title>
       <meta name="title" content={title} />
-      <meta name="description" content={description} />
 
-      {/* Canonical URL */}
-      {canonical && <link rel="canonical" href={canonical} />}
-
-      {/* Robots */}
-      <meta name="robots" content={noindex ? "noindex,nofollow" : "index,follow"} />
 
       {/* Language and Region */}
       <meta name="language" content="English" />
@@ -40,6 +34,13 @@ export function SEOHead({
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+      {/* Open Graph */}
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content="website" />
+      {canonical && <meta property="og:url" content={canonical} />}
+      <meta property="og:image" content="https://tinycp.me/flags/ubuntu.avif" />
 
       {/* Performance Hints */}
       <link rel="dns-prefetch" href="//fonts.googleapis.com" />
