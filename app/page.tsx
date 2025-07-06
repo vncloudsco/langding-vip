@@ -1039,8 +1039,8 @@ export default function TinyPanelLanding() {
             <div>
               <h4 className="font-bold mb-4">{t("footer.developers")}</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Sanvv - Lead Developer</li>
-                <li>Mạnh Tường - Developer</li>
+                <li>Sanvv - Hostvn Script</li>
+                <li>Mạnh Tường - TinyActive</li>
                 <li className="pt-2">
                   <p className="text-xs">Based on HOSTVN Scripts</p>
                 </li>

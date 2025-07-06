@@ -53,8 +53,8 @@ export const metadata: Metadata = {
     url: "https://tinyactive.github.io/panel",
     title: "TinyPanel - Professional LEMP Stack Installer for Ubuntu VPS",
     description:
-      "Automate your Ubuntu server setup with TinyPanel. Install Nginx, MariaDB, PHP with optimized security and performance. Includes WordPress tools, SSL automation, and comprehensive server management features.",
-    siteName: "TinyPanel",
+      "Cài đặt và tối ưu hóa LEMP trên máy chủ Ubuntu VPS với TinyPanel. Thiết lập LEMP tự động với bảo mật toàn diện, chứng chỉ SSL, công cụ WordPress và tối ưu hóa hiệu suất. Giải pháp quản lý máy chủ nguồn mở miễn phí..",
+          siteName: "TinyPanel",
     images: [
       {
         url: "https://tinycp.me/flags/ubuntu.avif",
