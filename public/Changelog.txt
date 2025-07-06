@@ -1,7 +1,7 @@
-v0.2.2
+v0.2
 
-- Removed: Nginx PageSpeed functionality (software is no longer being developed)
+- First Releases 
 
-v0.2.1
+v0.1
 
-- Added: Multiple SSL server
+- Tesing Version
