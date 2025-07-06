@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "TinyPanel - Fast LEMP Stack Installer & Optimizer for Ubuntu VPS | Nginx, MariaDB, PHP",
   description:
-    "Install and optimize Nginx, MariaDB, and PHP on Ubuntu VPS servers with TinyPanel. Automated LEMP stack setup with advanced security, SSL certificates, WordPress tools, and performance optimization. Free open-source server management solution.",
+    "Cài đặt và tối ưu hóa Nginx, MariaDB và PHP trên máy chủ với TinyPanel. Thiết lập bảo vệ máy chủ tự động với bảo mật nâng cao toàn diện, chứng chỉ SSL và các công cụ bảo mật Wordpress WordPress..",
   keywords: [
     "LEMP stack installer",
     "Ubuntu server setup",

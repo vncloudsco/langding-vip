@@ -9,7 +9,7 @@ interface SEOHeadProps {
 
 export function SEOHead({
   title = "TinyPanel - Professional LEMP Stack Installer for Ubuntu VPS",
-  description = "Install and optimize Nginx, MariaDB, and PHP on Ubuntu VPS servers with TinyPanel. Automated LEMP stack setup with advanced security, SSL certificates, and WordPress tools.",
+  description = "Cài đặt và tối ưu hóa Nginx, MariaDB và PHP trên máy chủ với TinyPanel. Thiết lập bảo vệ máy chủ tự động với bảo mật nâng cao toàn diện, chứng chỉ SSL và các công cụ bảo mật Wordpress WordPress.",
   canonical,
   noindex = false,
 }: SEOHeadProps) {
