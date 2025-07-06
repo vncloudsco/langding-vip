@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     siteName: "TinyPanel",
     images: [
       {
-        url: "https://tinyactive.com/wp-content/uploads/2024/02/Asset-5.svg",
+        url: "https://tinycp.me/flags/ubuntu.avif",
         width: 1200,
         height: 630,
         alt: "TinyPanel LEMP Stack Installer Logo",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     title: "TinyPanel - Fast LEMP Stack Installer for Ubuntu VPS",
     description:
       "Automate Ubuntu server setup with Nginx, MariaDB, PHP. Advanced security, SSL automation, WordPress tools included. Free & open-source.",
-    images: ["https://tinyactive.com/wp-content/uploads/2024/02/Asset-5.svg"],
+    images: ["https://tinycp.me/flags/ubuntu.avif"],
     creator: "@tinyactive",
   },
   robots: {
@@ -159,7 +159,7 @@ export default function RootLayout({
                 "Multi-PHP version support",
                 "Redis and Memcached integration",
               ],
-              screenshot: "https://tinyactive.com/wp-content/uploads/2024/02/Asset-5.svg",
+              screenshot: "https://tinycp.me/flags/ubuntu.avif",
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "4.8",
@@ -180,7 +180,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "TinyActive",
               url: "https://tinyactive.com",
-              logo: "https://tinyactive.com/wp-content/uploads/2024/02/Asset-5.svg",
+              logo: "https://tinycp.me/flags/ubuntu.avif",
               sameAs: ["https://github.com/TinyActive/panel", "https://www.facebook.com/groups/hostvn.vn"],
               contactPoint: {
                 "@type": "ContactPoint",
