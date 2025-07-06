@@ -181,7 +181,7 @@ export default function RootLayout({
               name: "TinyActive",
               url: "https://tinyactive.com",
               logo: "https://tinycp.me/flags/ubuntu.avif",
-              sameAs: ["https://github.com/TinyActive/panel", "https://www.facebook.com/groups/hostvn.vn"],
+              sameAs: ["https://github.com/TinyActive/panel", "https://www.facebook.com/groups/tinycp.me"],
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "Technical Support",

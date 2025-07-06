@@ -1014,7 +1014,7 @@ export default function TinyPanelLanding() {
               <h4 className="font-bold mb-4">{t("footer.community")}</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link href="https://www.facebook.com/groups/tinycp.me" className="hover:text-white transition-colors">
                     Facebook Group
                   </Link>
                 </li>
