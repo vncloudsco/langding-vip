@@ -91,7 +91,7 @@ export const metadata: Metadata = {
   category: "technology",
   classification: "Server Management Software",
   referrer: "origin-when-cross-origin",
-    generator: 'v0.dev'
+    generator: 'MTD'
 }
 
 export default function RootLayout({
