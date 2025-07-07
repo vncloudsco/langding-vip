@@ -521,7 +521,7 @@ export default function TinyPanelLanding() {
                 </div>
                 <div className="space-y-2 text-xs">
                   <div>✓ Installing Nginx...</div>
-                  <div>✓ Configuring MariaDB 10.5...</div>
+                  <div>✓ Configuring MariaDB...</div>
                   <div>✓ Setting up PHP 8.1...</div>
                   <div>✓ Configuring SSL certificates...</div>
                   <div>✓ Setting up security rules...</div>
@@ -762,7 +762,7 @@ export default function TinyPanelLanding() {
                 </h3>
                 <div className="space-y-3">
                   <Badge variant="secondary">Nginx (Latest)</Badge>
-                  <Badge variant="secondary">MariaDB 10.5</Badge>
+                  <Badge variant="secondary">MariaDB</Badge>
                   <Badge variant="secondary">PHP 5.6-8.4</Badge>
                   <Badge variant="secondary">ClamAV</Badge>
                   <Badge variant="secondary">ImunifyAV</Badge>
