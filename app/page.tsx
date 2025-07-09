@@ -823,10 +823,20 @@ export default function TinyPanelLanding() {
 
             <Card className="border-0 shadow-lg mb-8">
               <CardContent className="p-8">
-                <div className="bg-gray-900 rounded-lg p-6 mb-6">
-                  <code className="text-green-400 text-lg">
+                <div className="bg-gray-900 rounded-lg p-6 mb-6 flex items-center justify-between">
+                  <code className="text-green-400 text-lg select-all">
                     curl -sO https://sdk.tinycp.me/install && chmod +x install && ./install
                   </code>
+                  <button
+                    onClick={() => {
+                      navigator.clipboard.writeText('curl -sO https://sdk.tinycp.me/install && chmod +x install && ./install')
+                    }}
+                    className="ml-4 p-2 rounded hover:bg-gray-800 transition-colors"
+                    title="Copy to clipboard"
+                    type="button"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="9" y="9" width="13" height="13" rx="2" strokeWidth="2"/><rect x="3" y="3" width="13" height="13" rx="2" strokeWidth="2"/></svg>
+                  </button>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
