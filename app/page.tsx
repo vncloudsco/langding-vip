@@ -677,12 +677,15 @@ export default function TinyPanelLanding() {
                 </ul>
 
                 <div className="mt-8">
-                  <Button
-                    className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
-                    size="lg"
-                  >
-                    {t("pricing.free.button")}
-                  </Button>
+                  <Link href="#installation" className="w-full" passHref legacyBehavior>
+                    <Button
+                      as="a"
+                      className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+                      size="lg"
+                    >
+                      {t("pricing.free.button")}
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -732,12 +735,20 @@ export default function TinyPanelLanding() {
                 </ul>
 
                 <div className="mt-8">
-                  <Button
-                    className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
-                    size="lg"
+                  <a
+                    href="https://m.me/vouuvhb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
                   >
-                    {t("pricing.vip.button")}
-                  </Button>
+                    <Button
+                      as="span"
+                      className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+                      size="lg"
+                    >
+                      {t("pricing.vip.button")}
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -1064,6 +1075,23 @@ export default function TinyPanelLanding() {
 
       {/* Changelog Viewer */}
       <ChangelogViewer />
+
+      {/* Copy install command at the bottom */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <div className="flex items-center bg-gray-900 text-green-400 rounded-lg shadow-lg px-4 py-2 space-x-2">
+          <code className="text-sm select-all">curl -sO https://sdk.tinycp.me/install &amp;&amp; chmod +x install &amp;&amp; ./install</code>
+          <button
+            onClick={() => {
+              navigator.clipboard.writeText('curl -sO https://sdk.tinycp.me/install && chmod +x install && ./install')
+            }}
+            className="ml-2 p-1 rounded hover:bg-gray-800 transition-colors"
+            title="Copy to clipboard"
+            type="button"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="9" y="9" width="13" height="13" rx="2" strokeWidth="2"/><rect x="3" y="3" width="13" height="13" rx="2" strokeWidth="2"/></svg>
+          </button>
+        </div>
+      </div>
     </div>
   )
 }
