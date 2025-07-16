@@ -13,9 +13,11 @@ export function PricingTable() {
     { key: "pricing.feature.allFeatures", included: true },
     { key: "pricing.feature.unlimitedWebsites", included: true },
     { key: "pricing.feature.noRestrictions", included: true },
+    { key: "pricing.feature.unlimitedRebuilds", included: true },
     { key: "pricing.feature.waf", included: false },
     { key: "pricing.feature.wpLock", included: false },
     { key: "pricing.feature.aiProtection", included: false },
+    { key: "pricing.feature.networkSecurity", included: false },
   ]
 
   const vipFeatures = [
@@ -25,6 +27,7 @@ export function PricingTable() {
     { key: "pricing.feature.waf", included: true },
     { key: "pricing.feature.wpLock", included: true },
     { key: "pricing.feature.aiProtection", included: true },
+    { key: "pricing.feature.networkSecurity", included: true },
     { key: "pricing.feature.rebuilds", included: true },
   ]
 

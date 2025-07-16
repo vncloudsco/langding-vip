@@ -40,7 +40,9 @@ const translations = {
     "pricing.feature.waf": "WAF ModSecurity",
     "pricing.feature.wpLock": "WordPress Lockdown",
     "pricing.feature.aiProtection": "AI Crawler Protection",
+    "pricing.feature.networkSecurity": "Network Security",
     "pricing.feature.rebuilds": "5 Free Server Rebuilds",
+    "pricing.feature.unlimitedRebuilds": "Unlimited Server Rebuilds",
     "pricing.feature.additionalRebuilds": "Additional rebuilds: $5 each",
     "pricing.feature.included": "Included",
     "pricing.feature.notIncluded": "Not Included",
@@ -254,7 +256,9 @@ const translations = {
     "pricing.feature.waf": "WAF ModSecurity",
     "pricing.feature.wpLock": "WordPress Lockdown",
     "pricing.feature.aiProtection": "Chặn AI Crawler",
+    "pricing.feature.networkSecurity": "Bảo mật Mạng",
     "pricing.feature.rebuilds": "5 lần Rebuild máy chủ miễn phí",
+    "pricing.feature.unlimitedRebuilds": "Rebuild máy chủ không giới hạn",
     "pricing.feature.additionalRebuilds": "Rebuild thêm: 100.000₫/lần",
 
     // Key Features

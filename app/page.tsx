@@ -662,6 +662,10 @@ export default function TinyPanelLanding() {
                     <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
                     {t("pricing.feature.noRestrictions")}
                   </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    {t("pricing.feature.unlimitedRebuilds")}
+                  </li>
                   <li className="flex items-start text-gray-500 opacity-60">
                     <Lock className="w-5 h-5 mr-3 mt-0.5" />
                     {t("pricing.feature.waf")}
@@ -673,6 +677,10 @@ export default function TinyPanelLanding() {
                   <li className="flex items-start text-gray-500 opacity-60">
                     <Lock className="w-5 h-5 mr-3 mt-0.5" />
                     {t("pricing.feature.aiProtection")}
+                  </li>
+                  <li className="flex items-start text-gray-500 opacity-60">
+                    <Lock className="w-5 h-5 mr-3 mt-0.5" />
+                    {t("pricing.feature.networkSecurity")}
                   </li>
                 </ul>
 
@@ -721,6 +729,10 @@ export default function TinyPanelLanding() {
                   <li className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
                     {t("pricing.feature.aiProtection")}
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                    {t("pricing.feature.networkSecurity")}
                   </li>
                   <li className="flex items-center text-gray-700">
                     <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
