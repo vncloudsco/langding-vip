@@ -9,7 +9,7 @@ interface SEOHeadProps {
 
 export function SEOHead({
   title = "TinyPanel - Professional LEMP Stack Installer for Ubuntu VPS",
-  description = "Install and optimize Nginx, MariaDB, and PHP on Ubuntu VPS servers with TinyPanel. Automated LEMP stack setup with advanced security, SSL certificates, and WordPress tools.",
+  description = "Cài đặt và tối ưu hóa Nginx, MariaDB và PHP trên máy chủ với TinyPanel. Thiết lập bảo vệ máy chủ tự động với bảo mật nâng cao toàn diện, chứng chỉ SSL và các công cụ bảo mật Wordpress WordPress.",
   canonical,
   noindex = false,
 }: SEOHeadProps) {
@@ -18,13 +18,7 @@ export function SEOHead({
       {/* Primary Meta Tags */}
       <title>{title}</title>
       <meta name="title" content={title} />
-      <meta name="description" content={description} />
 
-      {/* Canonical URL */}
-      {canonical && <link rel="canonical" href={canonical} />}
-
-      {/* Robots */}
-      <meta name="robots" content={noindex ? "noindex,nofollow" : "index,follow"} />
 
       {/* Language and Region */}
       <meta name="language" content="English" />
@@ -40,6 +34,13 @@ export function SEOHead({
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+      {/* Open Graph */}
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content="website" />
+      {canonical && <meta property="og:url" content={canonical} />}
+      <meta property="og:image" content="https://tinycp.me/flags/ubuntu.avif" />
 
       {/* Performance Hints */}
       <link rel="dns-prefetch" href="//fonts.googleapis.com" />

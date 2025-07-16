@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "TinyPanel - Fast LEMP Stack Installer & Optimizer for Ubuntu VPS | Nginx, MariaDB, PHP",
   description:
-    "Install and optimize Nginx, MariaDB, and PHP on Ubuntu VPS servers with TinyPanel. Automated LEMP stack setup with advanced security, SSL certificates, WordPress tools, and performance optimization. Free open-source server management solution.",
+    "Cài đặt và tối ưu hóa Nginx, MariaDB và PHP trên máy chủ với TinyPanel. Thiết lập bảo vệ máy chủ tự động với bảo mật nâng cao toàn diện, chứng chỉ SSL và các công cụ bảo mật Wordpress WordPress..",
   keywords: [
     "LEMP stack installer",
     "Ubuntu server setup",
@@ -43,21 +43,21 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://tinyactive.github.io"),
+  metadataBase: new URL("https://tinycp.me/"),
   alternates: {
     canonical: "/panel",
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://tinyactive.github.io/panel",
+    locale: "vn_VI",
+    url: "https://tinycp.me/",
     title: "TinyPanel - Professional LEMP Stack Installer for Ubuntu VPS",
     description:
-      "Automate your Ubuntu server setup with TinyPanel. Install Nginx, MariaDB, PHP with optimized security and performance. Includes WordPress tools, SSL automation, and comprehensive server management features.",
-    siteName: "TinyPanel",
+      "Cài đặt và tối ưu hóa LEMP trên máy chủ Ubuntu VPS với TinyPanel. Thiết lập LEMP tự động với bảo mật toàn diện, chứng chỉ SSL, công cụ WordPress và tối ưu hóa hiệu suất. Giải pháp quản lý máy chủ nguồn mở miễn phí..",
+          siteName: "TinyPanel",
     images: [
       {
-        url: "https://tinyactive.com/wp-content/uploads/2024/02/Asset-5.svg",
+        url: "https://tinycp.me/flags/ubuntu.avif",
         width: 1200,
         height: 630,
         alt: "TinyPanel LEMP Stack Installer Logo",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     title: "TinyPanel - Fast LEMP Stack Installer for Ubuntu VPS",
     description:
       "Automate Ubuntu server setup with Nginx, MariaDB, PHP. Advanced security, SSL automation, WordPress tools included. Free & open-source.",
-    images: ["https://tinyactive.com/wp-content/uploads/2024/02/Asset-5.svg"],
+    images: ["https://tinycp.me/flags/ubuntu.avif"],
     creator: "@tinyactive",
   },
   robots: {
@@ -91,7 +91,7 @@ export const metadata: Metadata = {
   category: "technology",
   classification: "Server Management Software",
   referrer: "origin-when-cross-origin",
-    generator: 'v0.dev'
+    generator: 'MTD'
 }
 
 export default function RootLayout({
@@ -159,7 +159,7 @@ export default function RootLayout({
                 "Multi-PHP version support",
                 "Redis and Memcached integration",
               ],
-              screenshot: "https://tinyactive.com/wp-content/uploads/2024/02/Asset-5.svg",
+              screenshot: "https://tinycp.me/flags/ubuntu.avif",
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "4.8",
@@ -180,12 +180,12 @@ export default function RootLayout({
               "@type": "Organization",
               name: "TinyActive",
               url: "https://tinyactive.com",
-              logo: "https://tinyactive.com/wp-content/uploads/2024/02/Asset-5.svg",
-              sameAs: ["https://github.com/TinyActive/panel", "https://www.facebook.com/groups/hostvn.vn"],
+              logo: "https://tinycp.me/flags/ubuntu.avif",
+              sameAs: ["https://github.com/TinyActive/panel", "https://www.facebook.com/groups/tinycp.me"],
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "Technical Support",
-                email: "sanvv@hostvn.com",
+                email: "contact@manhtuong.net",
                 availableLanguage: ["English", "Vietnamese"],
               },
             }),

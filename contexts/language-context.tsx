@@ -262,14 +262,14 @@ const translations = {
     "pricing.feature.additionalRebuilds": "Rebuild thêm: 100.000₫/lần",
 
     // Key Features
-    "features.title": "Tính năng mạnh mẽ cho Web Hosting hiện đại",
+    "features.title": "Tính năng mạnh mẽ cho LEMP Stack hiện đại",
     "features.subtitle": "Mọi thứ bạn cần để thiết lập và quản lý môi trường máy chủ web hiệu suất cao",
     "features.performance.title": "Tối ưu hiệu suất",
     "features.performance.desc":
       "Cấu hình MySQL, Nginx và PHP được tối ưu dựa trên thông số VPS của bạn. Bao gồm nén Brotli và bộ nhớ đệm FastCGI.",
     "features.security.title": "Bảo mật nâng cao",
     "features.security.desc":
-      "Bảo mật toàn diện với Fail2ban, cô lập người dùng, vô hiệu hóa các hàm PHP nguy hiểm và quản lý chứng chỉ SSL tự động.",
+      "Bảo mật toàn diện với Fail2ban, Tách biệt từng domain, vô hiệu hóa các hàm PHP nguy hiểm và quản lý chứng chỉ SSL tự động.",
     "features.management.title": "Quản lý dễ dàng",
     "features.management.desc":
       "Hệ thống menu thân thiện với người dùng với cập nhật thường xuyên, công cụ WordPress toàn diện và giải pháp sao lưu tự động.",
@@ -279,7 +279,7 @@ const translations = {
     "features.wplock.title": "WordPress Lockdown",
     "features.wplock.desc":
       "Hệ thống bảo mật WordPress nâng cao hạn chế sự lây lan của mã độc và bảo vệ các tệp lõi khỏi các sửa đổi trái phép với giám sát thời gian thực.",
-    "features.aibot.title": "Chặn AI Crawler",
+    "features.aibot.title": "AI Crawler Protection",
     "features.aibot.desc":
       "Hệ thống phát hiện và bảo vệ bot nâng cao ngăn chặn các trình thu thập dữ liệu AI thu thập nội dung trang web của bạn và tiêu tốn tài nguyên máy chủ.",
 
@@ -293,35 +293,35 @@ const translations = {
     "why.automation.title": "Cấu hình máy chủ tự động",
     "why.automation.desc":
       "TinyPanel loại bỏ sự phức tạp của việc cài đặt LEMP stack thủ công trên máy chủ Ubuntu. Tự động hóa thông minh của chúng tôi cấu hình máy chủ web Nginx, cơ sở dữ liệu MariaDB và PHP với tối ưu hóa sẵn sàng sản xuất trong vài phút, không phải hàng giờ.",
-    "why.automation.badge1": "Thiết lập một cú nhấp",
-    "why.automation.badge2": "Sẵn sàng sản xuất",
-    "why.automation.badge3": "Không thời gian chết",
+    "why.automation.badge1": "One-Click Setup",
+    "why.automation.badge2": "Production Ready",
+    "why.automation.badge3": "Zero Downtime",
 
     "why.security.title": "Bảo mật cấp doanh nghiệp",
     "why.security.desc":
-      "Tăng cường bảo mật tích hợp bao gồm ngăn chặn xâm nhập Fail2ban, tự động hóa chứng chỉ SSL với Let's Encrypt, cấu hình tường lửa nâng cao và cô lập người dùng để bảo vệ Ubuntu VPS của bạn khỏi các mối đe dọa.",
+      "Tăng cường bảo mật tích hợp bao gồm ngăn chặn xâm nhập Fail2ban, tự động hóa chứng chỉ SSL với Let's Encrypt, cấu hình tường lửa nâng cao và cô lập người dùng để bảo vệ hệ thống của bạn khỏi các mối đe dọa.",
     "why.security.badge1": "Tự động gia hạn SSL",
-    "why.security.badge2": "Bảo vệ Fail2ban",
-    "why.security.badge3": "Cô lập người dùng",
+    "why.security.badge2": "Fail2ban Protection",
+    "why.security.badge3": "Cô lập Người Dùng",
 
-    "why.wordpress.title": "Tối ưu hóa WordPress Hosting",
+    "why.wordpress.title": "Tối ưu hóa WordPress Stack",
     "why.wordpress.desc":
-      "Các tính năng hosting WordPress chuyên biệt bao gồm cập nhật lõi tự động, quản lý plugin thông minh, tối ưu hóa cơ sở dữ liệu, tích hợp bộ nhớ đệm Redis/Memcached và hỗ trợ liền mạch cho các plugin bộ nhớ đệm phổ biến.",
-    "why.wordpress.badge1": "Sẵn sàng WP-Rocket",
+      "Các tính năng WordPress chuyên biệt bao gồm cập nhật Wordpress Core, quản lý plugin thông minh, tối ưu hóa cơ sở dữ liệu, tích hợp bộ nhớ đệm Redis/Memcached và hỗ trợ liền mạch cho các plugin bộ nhớ đệm phổ biến.",
+    "why.wordpress.badge1": "WP-Rocket Support",
     "why.wordpress.badge2": "Tự động tối ưu",
     "why.wordpress.badge3": "Quản lý Plugin",
 
     "why.monitoring.title": "Giám sát hiệu suất nâng cao",
     "why.monitoring.desc":
       "Giám sát hiệu suất thời gian thực với nhật ký truy cập Nginx chi tiết, theo dõi lỗi PHP, tối ưu hóa truy vấn MySQL và giám sát tài nguyên máy chủ toàn diện để đảm bảo hiệu suất trang web tối ưu và thời gian hoạt động tối đa.",
-    "why.monitoring.badge1": "Nhật ký thời gian thực",
-    "why.monitoring.badge2": "Tối ưu truy vấn",
+    "why.monitoring.badge1": "Real-time Logs",
+    "why.monitoring.badge2": "Query Optimization",
     "why.monitoring.badge3": "Giám sát tài nguyên",
 
     // Technical Specs
     "tech.title": "Các thành phần LEMP Stack hoàn chỉnh",
-    "tech.subtitle": "Phiên bản phần mềm hàng đầu trong ngành với cấu hình tối ưu",
-    "tech.nginx.title": "Máy chủ web Nginx",
+    "tech.subtitle": "Phiên bản phần mềm hàng đầu  với cấu hình tối ưu",
+    "tech.nginx.title": "Nginx Web Server",
     "tech.nginx.desc": "Phiên bản ổn định mới nhất với HTTP/2, nén Brotli và bộ nhớ đệm FastCGI",
     "tech.mariadb.title": "MariaDB 10.5",
     "tech.mariadb.desc": "Cấu hình cơ sở dữ liệu được tối ưu hóa đặc biệt cho các ứng dụng web",
@@ -344,8 +344,8 @@ const translations = {
 
     // WordPress Management
     "wp.title": "Quản lý WordPress toàn diện",
-    "wp.subtitle": "Công cụ chuyên biệt cho hosting và tối ưu hóa WordPress",
-    "wp.core.title": "Quản lý lõi",
+    "wp.subtitle": "Công cụ chuyên biệt cho VPS và tối ưu hóa WordPress",
+    "wp.core.title": "Quản lý WordPress Core",
     "wp.core.item1": "Kiểm tra phiên bản & cập nhật",
     "wp.core.item2": "Quản lý plugin",
     "wp.core.item3": "Thay đổi tên miền",
@@ -379,7 +379,7 @@ const translations = {
     "install.requirements": "Yêu cầu hệ thống",
     "install.req1": "VPS tối thiểu 512MB RAM",
     "install.req2": "Máy chủ sạch (không có dịch vụ cài đặt sẵn)",
-    "install.req3": "Ubuntu 18.04, 20.04 hoặc Debian 10",
+    "install.req3": "Ubuntu 18.04 tới 22.04",
     "install.req4": "Yêu cầu quyền root",
     "install.whatInstalled": "Những gì được cài đặt",
     "install.item1": "LEMP stack được tối ưu",
@@ -418,7 +418,7 @@ const translations = {
     "detailed.ssl": "SSL & Bảo mật",
     "detailed.sslDesc": "Tích hợp Let's Encrypt với hỗ trợ CloudFlare DNS API",
     "detailed.devTools": "Công cụ phát triển",
-    "detailed.devToolsDesc": "WP-CLI, Composer, Supervisor, Rclone và quét phần mềm độc hại",
+    "detailed.devToolsDesc": "WP-CLI, Composer, Supervisor, Rclone và Malware Scanning",
     "detailed.waf": "WAF ModSecurity",
     "detailed.wafDesc": "Tường lửa ứng dụng web với tích hợp ModSecurity để bảo vệ trang web của bạn khỏi các lỗ hổng phổ biến, SQL injection và tấn công cross-site scripting.",
     "detailed.wplock": "WordPress Lockdown",

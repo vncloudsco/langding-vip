@@ -521,7 +521,7 @@ export default function TinyPanelLanding() {
                 </div>
                 <div className="space-y-2 text-xs">
                   <div>✓ Installing Nginx...</div>
-                  <div>✓ Configuring MariaDB 10.5...</div>
+                  <div>✓ Configuring MariaDB...</div>
                   <div>✓ Setting up PHP 8.1...</div>
                   <div>✓ Configuring SSL certificates...</div>
                   <div>✓ Setting up security rules...</div>
@@ -685,12 +685,15 @@ export default function TinyPanelLanding() {
                 </ul>
 
                 <div className="mt-8">
-                  <Button
-                    className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
-                    size="lg"
-                  >
-                    {t("pricing.free.button")}
-                  </Button>
+                  <Link href="#installation" className="w-full" passHref legacyBehavior>
+                    <Button
+                      as="a"
+                      className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+                      size="lg"
+                    >
+                      {t("pricing.free.button")}
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -744,12 +747,20 @@ export default function TinyPanelLanding() {
                 </ul>
 
                 <div className="mt-8">
-                  <Button
-                    className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
-                    size="lg"
+                  <a
+                    href="https://m.me/vouuvhb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full"
                   >
-                    {t("pricing.vip.button")}
-                  </Button>
+                    <Button
+                      as="span"
+                      className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+                      size="lg"
+                    >
+                      {t("pricing.vip.button")}
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -774,7 +785,7 @@ export default function TinyPanelLanding() {
                 </h3>
                 <div className="space-y-3">
                   <Badge variant="secondary">Nginx (Latest)</Badge>
-                  <Badge variant="secondary">MariaDB 10.5</Badge>
+                  <Badge variant="secondary">MariaDB</Badge>
                   <Badge variant="secondary">PHP 5.6-8.4</Badge>
                   <Badge variant="secondary">ClamAV</Badge>
                   <Badge variant="secondary">ImunifyAV</Badge>
@@ -824,10 +835,20 @@ export default function TinyPanelLanding() {
 
             <Card className="border-0 shadow-lg mb-8">
               <CardContent className="p-8">
-                <div className="bg-gray-900 rounded-lg p-6 mb-6">
-                  <code className="text-green-400 text-lg">
+                <div className="bg-gray-900 rounded-lg p-6 mb-6 flex items-center justify-between">
+                  <code className="text-green-400 text-lg select-all">
                     curl -sO https://sdk.tinycp.me/install && chmod +x install && ./install
                   </code>
+                  <button
+                    onClick={() => {
+                      navigator.clipboard.writeText('curl -sO https://sdk.tinycp.me/install && chmod +x install && ./install')
+                    }}
+                    className="ml-4 p-2 rounded hover:bg-gray-800 transition-colors"
+                    title="Copy to clipboard"
+                    type="button"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><rect x="9" y="9" width="13" height="13" rx="2" strokeWidth="2"/><rect x="3" y="3" width="13" height="13" rx="2" strokeWidth="2"/></svg>
+                  </button>
                 </div>
                 <div className="grid md:grid-cols-2 gap-6 text-left">
                   <div>
@@ -920,7 +941,12 @@ export default function TinyPanelLanding() {
                     <Users className="w-5 h-5 text-gray-500" />
                     <div>
                       <p className="font-medium">{t("support.community")}</p>
-                      <p className="text-sm text-gray-600">TinyPanel Community</p>
+                      <Link
+                        href="https://www.facebook.com/groups/tinycp.me"
+                        className="text-sm text-gray-600 hover:text-blue-600 transition-colors"
+                      >
+                        Facebook Group
+                      </Link>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -1026,7 +1052,7 @@ export default function TinyPanelLanding() {
               <h4 className="font-bold mb-4">{t("footer.community")}</h4>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link href="https://www.facebook.com/groups/tinycp.me" className="hover:text-white transition-colors">
                     Facebook Group
                   </Link>
                 </li>
@@ -1051,8 +1077,8 @@ export default function TinyPanelLanding() {
             <div>
               <h4 className="font-bold mb-4">{t("footer.developers")}</h4>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li>Sanvv - Lead Developer</li>
-                <li>Mạnh Tường - Developer</li>
+                <li>Sanvv - Hostvn Script</li>
+                <li>Mạnh Tường - TinyActive</li>
                 <li className="pt-2">
                   <p className="text-xs">Based on HOSTVN Scripts</p>
                 </li>
